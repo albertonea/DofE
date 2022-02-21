@@ -8,3 +8,86 @@ body {
   background-color: var(--background-color);
 }
 
+
+.highlight {
+  color: var(--secondary-color);
+  font-family: "Gilroy ExtraBold";
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-size: 18px;
+}
+.logo {
+  stroke: var(--secondary-color);
+}
+
+.parent {
+  display: flex;
+}
+
+.box {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.box:first-child > a {
+  margin-right: auto;
+}
+.box:last-child  > span {
+  margin-left: auto;
+}
+
+
+nav {
+  position: sticky;
+  top: 0;
+  padding: 0.3rem;
+  background-color: var(--primary-color);
+}
+
+nav ul{
+  list-style-type: none;
+}
+
+nav li a{
+  color: var(--background-color);
+  padding: 1rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-family: "Gilroy ExtraBold";
+
+}
+
+
+header {
+  background-image: url("/img/hero-bg.png");
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh;
+  display: flex;
+
+}
+
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+
+
+h1 {
+  font-family: "Chronicle Display Semi";
+  color: var(--background-color);
+  text-transform: capitalize;
+  font-size: 88px;
+}
+
+.scroll {
+  font-family: "Gilroy ExtraBold";
+  text-transform: capitalize;
+  font-size: 18px;
+  color: var(--background-color);
+}
