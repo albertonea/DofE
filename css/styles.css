@@ -2,6 +2,7 @@
   --primary-color: #151515;
   --secondary-color: #ffcc00;
   --background-color:white;
+  --text-font:'Montserrat', sans-serif;
 }
 
 body {
@@ -11,9 +12,10 @@ body {
 
 .highlight {
   color: var(--secondary-color);
-  font-family: "Gilroy ExtraBold";
+  font-family: var(--text-font);
+  font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 6px;
+  letter-spacing: 3px;
   font-size: 18px;
   margin-left: 2rem;
 }
@@ -63,7 +65,9 @@ nav li a{
   padding: 1rem;
   text-decoration: none;
   text-transform: capitalize;
-  font-family: "Gilroy ExtraBold";
+  font-family: var(--text-font);
+  font-weight: 700;
+  letter-spacing: 1px;
 
 }
 
@@ -105,11 +109,12 @@ header {
 }
 
 .index {
-  font-family: "Gilroy ExtraBold";
+  font-family: var(--text-font);
+  font-weight: 800;
   font-size: 240px;
   color: rgb(0, 0, 0, 10%);
   margin: 0 0 0 0;
-
+  z-index: -1;
 
 
 }
@@ -137,13 +142,15 @@ footer .container p {
 
 .title {
   color: black;
+  font-size: 4rem;
 }
 
 .copyright {
   color: rgb(255, 255, 255, 0.20);
 }
 .caption {
-  font-family: "Gilroy ExtraBold";
+  font-family: var(--text-font);
+  font-weight: 700;
   font-size: 18px;
   color: black;
   max-width: 50vw;
@@ -152,7 +159,7 @@ footer .container p {
 
 .description {
   margin-top: -160px;
-  margin-left: 150px;
+  margin-left: 160px;
   margin-right: 5.5rem;
 }
 
@@ -163,7 +170,8 @@ footer .container p {
 
 .read-more {
   text-decoration: none;
-  font-family: "Gilroy ExtraBold";
+  font-family: var(--text-font);
+  font-weight: 500;
   font-size: 18px;
   color: var(--secondary-color);
 }
@@ -175,14 +183,15 @@ footer .container p {
 
 h1 {
   margin: 0 0 0 0;
-  font-family: "Chronicle Display Semi";
+  font-family: 'Libre Baskerville', serif;
   color: white;
   text-transform: capitalize;
   font-size: 88px;
 }
 
 .scroll {
-  font-family: "Gilroy ExtraBold";
+  font-family: var(--text-font);
+  font-weight: 500;
   text-transform: capitalize;
   font-size: 18px;
   color: var(--background-color);
@@ -195,7 +204,8 @@ footer {
 
 .footer-text {
   text-decoration: none;
-  color: white;
+  color: rgb(255, 255, 255, 0.5);
+  font-family: var(--text-font);
 }
 footer ul {
   list-style: none;
@@ -204,8 +214,10 @@ footer ul {
 
 footer h5 {
   color: var(--secondary-color);
-  font-family: "Gilroy ExtraBold";
+  font-family: var(--text-font);
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 6px;
+  letter-spacing: 3px;
   font-size: 18px;
+  margin-bottom: 0;
 }
