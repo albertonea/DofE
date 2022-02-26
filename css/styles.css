@@ -41,9 +41,10 @@ body {
 
 
 nav {
-  position: fixed;
+  position: sticky;
+  z-index: 1;
   top: 0;
-  min-width: 100vw;
+  max-width: 100vw;
   padding: 0.3rem;
   background-color: var(--primary-color);
 }
@@ -78,9 +79,6 @@ hr {
 header {
   background-image: url("/img/hero-bg.png");
   background-color: #151515;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: 100% 100%;
 
   min-height: 100vh;
@@ -91,14 +89,18 @@ header {
 
 }
 
-
+.container {
+  max-width: 1440px;
+  margin: 0 auto 120px;
+}
 
 .article-feature {
   max-height: 100vh;
   max-width: 100vw;
-  margin: 10vh 5vw 20vh 16vw;
+  margin-top: 10vh;
   display: flex;
-  position: relative;
+  align-items: center;
+
 
 }
 
@@ -107,27 +109,55 @@ header {
   font-size: 240px;
   color: rgb(0, 0, 0, 10%);
   margin: 0 0 0 0;
-  position: relative;
-  top: 180px;
-  right: 150px;
+
+
+
+}
+.footer-image {
+  height: 30vh;
+  background: url('/img/footer-bg.png');
+  background-size: 100% 100%;
+}
+
+footer {
+  background-color: var(--primary-color);
+}
+
+footer .container {
+  margin-top: 40px;
+  margin-bottom: 0;
+  display: flex ;
+  justify-content: flex-start;
 
 }
 
-.caption-box {
-  position: relative;
-  right: 25px;
+footer .container p {
+  max-width: 50%;
 }
 
 .title {
   color: black;
 }
 
+.copyright {
+  color: rgb(255, 255, 255, 0.20);
+}
 .caption {
   font-family: "Gilroy ExtraBold";
   font-size: 18px;
   color: black;
-
   max-width: 50vw;
+
+}
+
+.description {
+  margin-top: -160px;
+  margin-left: 150px;
+  margin-right: 5.5rem;
+}
+
+.caption-box {
+
 
 }
 
@@ -138,9 +168,8 @@ header {
   color: var(--secondary-color);
 }
 
-.image {
-
-
+.caption-box p {
+  position: relative;
 
 }
 
@@ -157,4 +186,26 @@ h1 {
   text-transform: capitalize;
   font-size: 18px;
   color: var(--background-color);
+}
+
+footer {
+  margin: 0;
+
+}
+
+.footer-text {
+  text-decoration: none;
+  color: white;
+}
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer h5 {
+  color: var(--secondary-color);
+  font-family: "Gilroy ExtraBold";
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  font-size: 18px;
 }
