@@ -80,7 +80,7 @@ hr {
 
 }
 
-header {
+.hero {
   background-image: url("/img/hero-bg.png");
   background-color: #151515;
   background-size: 100% 100%;
@@ -95,7 +95,7 @@ header {
 
 .container {
   max-width: 1440px;
-  margin: 0 auto 120px;
+  margin: 120px auto 120px;
 }
 
 .article-feature {
@@ -197,10 +197,6 @@ h1 {
   color: var(--background-color);
 }
 
-footer {
-  margin: 0;
-
-}
 
 .footer-text {
   text-decoration: none;
@@ -220,4 +216,20 @@ footer h5 {
   letter-spacing: 3px;
   font-size: 18px;
   margin-bottom: 0;
+}
+
+.amazon-hero {
+  background-color: black;
+  background-image: url("/img/amazon-header-bg.png");
+  height: 20vh;
+  background-size: 100% 100%;
+}
+
+
+.blog-footer {
+
+  background-color: var(--primary-color);
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
 }
