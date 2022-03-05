@@ -221,7 +221,7 @@ footer h5 {
 .amazon-hero {
   background-color: black;
   background-image: url("/img/amazon-header-bg.png");
-  height: 20vh;
+  height: 50vh;
   background-size: 100% 100%;
 }
 
@@ -232,4 +232,18 @@ footer h5 {
   position: absolute;
   bottom: 0;
   width: 100vw;
+}
+
+.farming-hero {
+  background-color: black;
+  background-image: url("/img/animal-farming-header-bg.png");
+  height: 50vh;
+  background-size: 100% 100%;
+}
+
+.ewaste-hero {
+  background-color: black;
+  background-image: url("/img/Ewaste-header-bg.png");
+  height: 50vh;
+  background-size: 100% 100%;
 }
