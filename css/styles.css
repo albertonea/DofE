@@ -247,3 +247,26 @@ footer h5 {
   height: 50vh;
   background-size: 100% 100%;
 }
+
+.info-text {
+  font-size: 20px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.blog-container {
+  max-width: 1440px;
+  margin: 130px 30vw 130px 30vw;
+}
+
+h2 {
+  margin: 0 0 0 0;
+  font-family: 'Libre Baskerville', serif;
+  text-transform: capitalize;
+  font-size: 65px;
+}
